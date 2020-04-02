@@ -1,52 +1,76 @@
-@import url(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
-footer {
-  /* margin:20px;
-    background-color: black; */
-  height: 500px;
+.footer {
+  padding: 12px;
+  background-color: black;
+  color: white;
 }
 
-EDIT ON
-#site-content {
-  min-height: 100%;
-  min-height: 100vh;
-  padding-top: 65px;
+.footer h2 {
+  font-size: 24px;
+  font-family: shelby;
+  text-align: center;
+}
+
+.footer__form {
+  border: 0px;
   position: relative;
-  z-index: 1;
-  -webkit-box-shadow: #000 0 7px 35px 0;
-  box-shadow: #000 0 7px 35px 0;
+  margin-bottom: 200px;
+  z-index: 2;
 }
 
-#site-footer {
-  padding: 25px 0;
-  font-size: 85%;
-  background-color: #2A2A2A;
+.footer__below {
   position: fixed;
-  z-index: -1;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
+  color: white;
+  height: 200px;
 }
 
-/* NOT NEEDED, THIS IS JUST FOR THE PEN */
-html, body {
-  padding: 0;
-  margin: 0;
-  background-color: #D1D1D1;
+.form {
+  width: auto;
+  margin-top: 50px;
 }
 
-#site-content {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("http://dummyimage.com/3000x3000/D1D1D1/2A2A2A.png?text=Scroll+Down");
+.form .block {
+  display: block;
+  width: 100%;
+  background-color: #2d3c64;
+  border: none;
 }
 
-#site-footer {
-  min-height: 100vw;
-  /* DID THIS SO YOU CAN SEE IT AUTOMATICALLY SCALE - SIMULATION RESPONSIVENESS */
-  /* RESIZE THE WINDOW AND THEN SCROLL VERITCALLY AGAIN */
-  background-size: cover;
-  background-position: center;
-  background-image: url("http://dummyimage.com/1500x1500/2A2A2A/FFF.png?text=Footer+Area+(Resize+Me)");
+.form__label {
+  margin: 15px 20px 5px;
+  display: block;
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+.form__input {
+  height: 30px;
+}
+
+.form__submit {
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: none;
+  font-size: 15px;
+  color: #aaaaaa;
+  border-bottom: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, transparent), to(#2d3c64));
+  background: linear-gradient(transparent 31%, #2d3c64);
+  font-weight: normal;
+}
+
+.form__submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, transparent), to(#1ec7bb));
+  background: linear-gradient(transparent 31%, #1ec7bb);
+  color: white;
 }
 /*# sourceMappingURL=footer.css.map */
